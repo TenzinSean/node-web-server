@@ -54,6 +54,11 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs' , {
+        pageTile: 'Projects Temp'
+    });
+});
 app.get('/home', (req, res) => {
     res.send({
         name: 'Chokrab',
